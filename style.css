@@ -1,11 +1,24 @@
+* {
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
-    margin: 0;
     background-color:khaki;
 }
 
 h1 {
     font-family: sans-serif;
     color: beige;
+    font-size: 3rem;
+	text-transform: uppercase;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
 .container {
@@ -33,6 +46,35 @@ h1 {
 #footer .footer {
 	min-height: 100px;
 	flex-direction: column;
+}
+
+#footer h2 {
+	color: beige;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+
+#footer .social-item img {
+	filter: grayscale(0);
+	transition: .3s ease filter;
+}
+
+#footer .social-item:hover img {
+	filter: grayscale(0);
 }
 
 #footer p {
