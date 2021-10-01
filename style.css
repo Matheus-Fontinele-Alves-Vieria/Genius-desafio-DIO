@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-color:khaki;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: beige;
+}
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#header {
+	width: 100vw;
+	height: auto;
+}
+
+#header .header {
+	min-height: 8vh;
+	background-color: #485563;
+}
+
+#footer {
+    width: 100vw;
+	background-image: linear-gradient(60deg, khaki 0%, #485563 100%);
+}
+
+#footer .footer {
+	min-height: 100px;
+	flex-direction: column;
+}
+
+#footer p {
+	color: teal;
+    font-weight: bold;
+	font-size: 1.3rem;
+    text-align: center;
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    box-shadow: 3px 9px 11px 3px rgba(184,175,184,1);
+    display: grid;
+    grid-template-areas: 'green red' 'yellow blue';
+    grid-gap: 10px;
+    border: white;
+    background-color: white;
+    border-radius: 100%;
+    width: 600px;
+    height: 600px;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: red;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    grid-area: green;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.8;
+}
